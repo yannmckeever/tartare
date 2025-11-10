@@ -1,0 +1,22 @@
+/* Mobile banner adjustments (<=600px) */
+@media (max-width:600px){
+  .banner{height:240px}
+  /* Stack logos centered, smaller */
+  .banner-logo, .banner-anatole{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    height:40%;
+    max-width:120px;
+    object-fit:contain;
+    z-index:3;
+  }
+  /* place the logo above the center and anatole below */
+  .banner-logo{top:12%;}
+  .banner-anatole{top:56%;}
+  /* give overlay a bit more top padding so text isn't overlapped */
+  .banner-overlay{padding-top:6%;}
+  /* make mandat grid single column on small phones for readability */
+  .mandat-grid{grid-template-columns:repeat(1,1fr)}
+  .past-grid{grid-template-columns:repeat(1,1fr)}
+}
